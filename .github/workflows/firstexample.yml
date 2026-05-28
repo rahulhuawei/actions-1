@@ -6,6 +6,9 @@ jobs:
     first_job: 
         runs-on: ubuntu-latest
         steps:
+            - name: git checkout
+              run: action/checkout@v4
+              
             - name: welcome message
               run: echo "Hi! This is my first flow ,Happy learning"
             
